@@ -13,11 +13,11 @@ def main():
 
 	try:
 		tts = gTTS(text=text, lang=lang, slow=False)
-		save_dir = input("Enter the directory where you want to save the audio file: ").strip()
+		save_dir = input("Enter the directory where you want to save the audio file (press Enter to use Downloads): ").strip()
 		if not save_dir:
-			save_dir = os.getcwd()
-		else:
-			os.makedirs(save_dir, exist_ok=True)
+			default_downloads = os.path.join(os.path.expanduser("~"), "Downloads")
+			save_dir = default_downloads
+		os.makedirs(save_dir, exist_ok=True)
 		filename = input("Enter the filename to save as (e.g., 'my_audio.mp3'): ").strip()
 		if not filename:
 			filename = "output.mp3"
