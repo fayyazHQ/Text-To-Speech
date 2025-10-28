@@ -32,5 +32,3 @@ This repository contains a collection of Text-To-Speech (TTS) models and related
 ## Disclaimer and Project Status
 
 This project uses the gTTS library, which is an independent Python library interfacing with Google Translate's text-to-speech API. It is not affiliated with Google or Google Cloud services. For detailed documentation, see the official gTTS docs [here](https://pypi.org/project/gTTS/).
-
-Please note this is an ongoing project. I plan to continue editing and improving the codebase over time to enhance features and functionality.
